@@ -17,6 +17,8 @@
     <label><input name="imgurId" placeholder="App Id"> Imgur</label>
     <label><input name="meetupId" placeholder="App Id"> Meetup</label>
     <label><input name="stravaId" placeholder="App Id"> Strava</label>
+    <label><input name="existId" placeholder="App Id"> Exist</label>
+
   </form>
   <form name="social">
     <label><input type="radio" value="instagram" name="network"> Instagram</label>
@@ -26,6 +28,7 @@
     <label><input type="radio" value="imgur" name="network"> Imgur</label>
     <label><input type="radio" value="meetup" name="network"> Meetup</label>
     <label><input type="radio" value="strava" name="network"> Strava</label>
+    <label><input type="radio" value="exist" name="network"> Exist</label>
 
     <button type="button" id="login">login</button>
   </form>
@@ -85,6 +88,11 @@
         redurectUri: redirectUri,
         responseType: 'code'
       })
+      networks.exist = new providers.Exist({
+        clientId: document.forms.config.existId.value,
+        redurectUri: redirectUri,
+        responseType: 'code'
+      })      
       document.getElementById('login').addEventListener('click', function() {
         var providerName = Array.prototype.slice.call(document.forms.social.network)
           .filter(function(radio) {

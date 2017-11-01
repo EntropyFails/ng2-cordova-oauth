@@ -14,6 +14,7 @@
         "src/core.ts",
         "src/oauth.ts",
         "src/utility.ts",
+        "src/provider/exist.ts",
         "src/provider/facebook.ts",
         "src/provider/google.ts",
         "src/provider/imgur.ts",

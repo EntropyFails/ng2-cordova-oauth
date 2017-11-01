@@ -1,6 +1,6 @@
 {
     "name": "ng2-cordova-oauth",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Connect to Oauth providers using Apache Cordova, Angular 2, and the InAppBrowser plugin",
     "author": {
         "name": "Nic Raboy",
@@ -8,7 +8,7 @@
     },
     "homepage": "https://www.thepolyglotdeveloper.com",
     "devDependencies": {
-        "typescript": "^1.7.5"
+        "typescript": "^2.6.1"
     },
     "keywords": [
         "angular 2",
@@ -29,5 +29,8 @@
     },
     "bugs": {
         "url": "https://github.com/nraboy/ng2-cordova-oauth/issues"
+    },
+    "dependencies": {
+        "tsc-test": "^0.1.5"
     }
 }
